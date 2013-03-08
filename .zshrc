@@ -26,6 +26,9 @@ alias vgnt-deployd="cd ~/Vagrant/chef-deployd"
 # Serve up local directory with python SimpleHTTPServer
 alias server='open http://localhost:8000 && python -m SimpleHTTPServer'
 
+# Ranger finder
+alias ranger="~/ranger/ranger.py"
+
 # Make dir and cd into it
 mkcd() {
 	mkdir -p "$@" && cd "$_";

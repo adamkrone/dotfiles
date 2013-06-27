@@ -18,6 +18,9 @@ alias s="subl ."
 alias o="open"
 alias oo="open ."
 
+# Copy pwd to clipboard
+alias cwd='printf "%q\n" "$(pwd)" | pbcopy'
+
 # List all files colorized in long format
 alias l="ls -l -Gl"
 

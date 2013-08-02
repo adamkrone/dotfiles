@@ -13,16 +13,6 @@ alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
 alias kniferb="subl ~/.chef/knife.rb"
 
-# Projects
-alias chef-repo="cd ~/Projects/chef"
-alias chef-liferay="cd ~/Projects/chef-liferay"
-
-# Vagrant Boxes
-alias vgnt-precise64="cd ~/Vagrant/precise64"
-alias vgnt-wordpress="cd ~/Vagrant/chef-wordpress"
-alias vgnt-liferay="cd ~/Vagrant/chef-liferay"
-alias vgnt-deployd="cd ~/Vagrant/chef-deployd"
-
 # Serve up local directory with python SimpleHTTPServer
 alias server='open http://localhost:8000 && python -m SimpleHTTPServer'
 

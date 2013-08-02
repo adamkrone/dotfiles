@@ -32,10 +32,15 @@ brew install php54
 brew install ack
 #brew install exiv2
 brew install git
-#brew install imagemagick
+brew install mercurial
+brew install tmux
+brew install htop-osx
+brew install ssh-copy-id
+brew install imagemagick
 brew install lynx
 brew install node
 brew install rename
 brew install rhino
 brew install tree
 brew install webkit2png
+brew install ranger

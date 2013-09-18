@@ -78,4 +78,4 @@ PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
 
 export PATH=/usr/local/share/npm/bin:/usr/local/deployd/bin:/usr/local/share/python:$PATH
 
-export EDITOR="subl -w"
+export EDITOR="vim"

@@ -24,7 +24,32 @@ mkcd() {
 	mkdir -p "$@" && cd "$_";
 }
 
-# Set to this to use case-sensitive completion
+# Marks
+export MARKPATH=$HOME/.marks
+function jump { 
+    cd -P "$MARKPATH/$1" 2>/dev/null || echo "No such mark: $1"
+}
+
+function mark { 
+		    mkdir -p "$MARKPATH"; ln -s "$(pwd)" "$MARKPATH/$1"
+}
+
+function unmark { 
+    rm -i "$MARKPATH/$1"
+}
+
+function marks {
+    \ls -l "$MARKPATH" | tail -n +2 | sed 's/  / /g' | cut -d' ' -f9- | awk -F ' -> ' '{printf "%-10s -> %s\n", $1, $2}'
+}
+
+function _completemarks {
+  reply=($(ls $MARKPATH))
+}
+
+compctl -K _completemarks jump
+compctl -K _completemarks unmark
+
+#Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
 # Comment this out to disable weekly auto-update checks
@@ -53,4 +78,4 @@ PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
 
 export PATH=/usr/local/share/npm/bin:/usr/local/deployd/bin:/usr/local/share/python:$PATH
 
-export EDITOR="subl -w"
+export EDITOR="vim"

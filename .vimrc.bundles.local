@@ -1,0 +1,3 @@
+Bundle 'jpo/vim-railscasts-theme'
+Bundle "daylerees/colour-schemes", { "rtp": "vim-themes/" }
+Bundle "othree/javascript-libraries-syntax.vim"

@@ -51,3 +51,4 @@ brew install optipng
 brew install jpeg-turbo
 brew install nmap
 brew install netcat
+brew install ctags

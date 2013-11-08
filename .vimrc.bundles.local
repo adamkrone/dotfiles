@@ -1,3 +1,10 @@
 Bundle 'jpo/vim-railscasts-theme'
 Bundle "daylerees/colour-schemes", { "rtp": "vim-themes/" }
 Bundle "othree/javascript-libraries-syntax.vim"
+Bundle "tpope/vim-endwise"
+Bundle "ecomba/vim-ruby-refactoring"
+Bundle "vim-ruby/vim-ruby"
+Bundle "tpope/vim-rake"
+Bundle "tpope/vim-bundler"
+Bundle "tpope/vim-dispatch"
+Bundle "tpope/vim-eunuch"

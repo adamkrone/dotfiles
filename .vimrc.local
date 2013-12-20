@@ -14,3 +14,7 @@ colorscheme solarized
 
 let g:indent_guides_enable_on_vim_startup = 0
 let g:indent_guides_guide_size=1
+
+set noexpandtab
+
+autocmd Filetype ruby setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2

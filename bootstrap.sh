@@ -15,3 +15,7 @@ else
 fi
 unset doIt
 source ~/.bash_profile
+
+mv ~/com.googlecode.iterm2.plist ~/Library/Preferences/
+
+vim +BundleInstall! +BundleClean +q

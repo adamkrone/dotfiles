@@ -72,7 +72,7 @@ plugins=(git github mercurial vagrant)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/local/share/npm/bin:/usr/local/deployd/bin:/usr/local/share/python:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=/usr/local/bin:/usr/local/share/npm/bin:/usr/local/deployd/bin:/usr/local/share/python:/usr/texbin:/usr/bin:/bin:/usr/sbin:/sbin
 
 export EDITOR="vim"
 

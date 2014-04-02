@@ -65,6 +65,7 @@
         Bundle 'tpope/vim-abolish.git'
         Bundle 'osyo-manga/vim-over'
         Bundle 'justinmk/vim-sneak'
+		Bundle 'shougo/neocomplcache'
     " }
 
     " General Programming {

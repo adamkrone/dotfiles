@@ -413,6 +413,10 @@ map zh zH
         autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
     " }
 
+	" Neocomplcache {
+		let g:neocomplcache_enable_at_startup = 1
+	" }
+
     " UndoTree {
         nnoremap <Leader>u :UndotreeToggle<CR>
         " If undotree is opened, it is likely one wants to interact with it.

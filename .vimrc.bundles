@@ -44,52 +44,25 @@
     " General {
         Bundle 'scrooloose/nerdtree'
         Bundle 'altercation/vim-colors-solarized'
-        Bundle 'spf13/vim-colors'
         Bundle 'tpope/vim-surround'
-        Bundle 'spf13/vim-autoclose'
         Bundle 'kien/ctrlp.vim'
-        Bundle 'terryma/vim-multiple-cursors'
-        Bundle 'vim-scripts/sessionman.vim'
-        Bundle 'matchit.zip'
-        Bundle 'Lokaltog/powerline', {'rtp':'/powerline/bindings/vim'}
         Bundle 'bling/vim-airline'
         Bundle 'bling/vim-bufferline'
         Bundle 'Lokaltog/vim-easymotion'
         Bundle 'godlygeek/csapprox'
-        Bundle 'jistr/vim-nerdtree-tabs'
-        Bundle 'flazz/vim-colorschemes'
-        Bundle 'mbbill/undotree'
         Bundle 'nathanaelkane/vim-indent-guides'
-        Bundle 'vim-scripts/restore_view.vim'
         Bundle 'mhinz/vim-signify'
         Bundle 'tpope/vim-abolish.git'
-        Bundle 'osyo-manga/vim-over'
-        Bundle 'justinmk/vim-sneak'
-		Bundle 'shougo/neocomplcache'
     " }
 
     " General Programming {
         Bundle 'scrooloose/syntastic'
         Bundle 'tpope/vim-fugitive'
-        Bundle 'mattn/webapi-vim'
-        Bundle 'mattn/gist-vim'
         Bundle 'scrooloose/nerdcommenter'
         Bundle 'godlygeek/tabular'
         if executable('ctags')
             Bundle 'majutsushi/tagbar'
         endif
-    " }
-
-    " PHP {
-        Bundle 'spf13/PIV'
-        Bundle 'arnaud-lb/vim-php-namespace'
-    " }
-
-    " Python {
-        Bundle 'klen/python-mode'
-        Bundle 'python.vim'
-        Bundle 'python_match.vim'
-        Bundle 'pythoncomplete'
     " }
 
     " Javascript {
@@ -99,22 +72,6 @@
         Bundle 'briancollins/vim-jst'
         Bundle 'kchmck/vim-coffee-script'
         Bundle "othree/javascript-libraries-syntax.vim"
-    " }
-
-    " Java {
-        Bundle 'derekwyatt/vim-scala'
-        Bundle 'derekwyatt/vim-sbt'
-    " }
-
-    " Haskell {
-        Bundle 'dag/vim2hs'
-        Bundle 'Twinside/vim-haskellConceal'
-        Bundle 'lukerandall/haskellmode-vim'
-        Bundle 'eagletmt/neco-ghc'
-        Bundle 'eagletmt/ghcmod-vim'
-        Bundle 'Shougo/vimproc'
-        Bundle 'adinapoli/cumino'
-        Bundle 'bitc/vim-hdevtools'
     " }
 
     " HTML {
@@ -137,10 +94,6 @@
         let g:rubycomplete_rails = 1
     " }
 
-    " Go Lang {
-        Bundle 'Blackrush/vim-gocode'
-    " }
-
 	" Clojure {
 		Bundle 'tpope/vim-fireplace'
 		Bundle 'tpope/vim-classpath'
@@ -158,11 +111,6 @@
         Bundle "daylerees/colour-schemes", { "rtp": "vim-themes/" }
         Bundle "tpope/vim-dispatch"
         Bundle "tpope/vim-eunuch"
-        Bundle 'Puppet-Syntax-Highlighting'
-    " }
-
-    " Twig {
-        Bundle 'beyondwords/vim-twig'
     " }
 
 " }

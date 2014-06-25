@@ -19,6 +19,10 @@ alias server='open http://localhost:8000 && python -m SimpleHTTPServer'
 # Ranger finder
 alias ranger="~/ranger/ranger.py"
 
+# Useful Ruby aliases
+alias be="bundle exec"
+alias bi="bundle install"
+
 # Make dir and cd into it
 mkcd() {
 	mkdir -p "$@" && cd "$_";

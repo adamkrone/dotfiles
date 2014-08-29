@@ -19,6 +19,10 @@ alias server='open http://localhost:8000 && python -m SimpleHTTPServer'
 # Ranger finder
 alias ranger="~/ranger/ranger.py"
 
+# Useful Ruby aliases
+alias be="bundle exec"
+alias bi="bundle install"
+
 # Make dir and cd into it
 mkcd() {
 	mkdir -p "$@" && cd "$_";
@@ -48,6 +52,12 @@ function _completemarks {
 
 compctl -K _completemarks jump
 compctl -K _completemarks unmark
+
+# Pretty Cat
+function pcat() {
+  pygmentize -f terminal256 -O style=native -g $1 | less;
+}
+alias cat=pcat
 
 #Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"

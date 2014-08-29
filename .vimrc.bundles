@@ -62,6 +62,7 @@
         Bundle 'tpope/vim-fugitive'
         Bundle 'scrooloose/nerdcommenter'
         Bundle 'godlygeek/tabular'
+        Bundle 'ervandew/supertab'
         if executable('ctags')
             Bundle 'majutsushi/tagbar'
         endif

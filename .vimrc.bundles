@@ -30,7 +30,7 @@
         Bundle 'gmarik/vundle'
         Bundle 'MarcWeber/vim-addon-mw-utils'
         Bundle 'tomtom/tlib_vim'
-	Bundle 'tmhedberg/matchit'
+        Bundle 'tmhedberg/matchit'
         if executable('ag')
             Bundle 'mileszs/ack.vim'
             let g:ackprg = 'ag --nogroup --nocolor --column --smart-case'
@@ -61,6 +61,7 @@
         Bundle 'tpope/vim-fugitive'
         Bundle 'scrooloose/nerdcommenter'
         Bundle 'godlygeek/tabular'
+        Bundle 'ervandew/supertab'
         if executable('ctags')
             Bundle 'majutsushi/tagbar'
         endif

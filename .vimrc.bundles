@@ -53,6 +53,7 @@
         Bundle 'nathanaelkane/vim-indent-guides'
         Bundle 'mhinz/vim-signify'
         Bundle 'tpope/vim-abolish.git'
+        Bundle 'ervandew/supertab'
     " }
 
     " General Programming {

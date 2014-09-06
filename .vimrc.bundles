@@ -1,119 +1,112 @@
 " Environment {
 
-    " Basics {
-        set nocompatible        " Must be first line
-        set background=dark     " Assume a dark background
-    " }
+  " Basics {
+    set nocompatible        " Must be first line
+    set background=dark     " Assume a dark background
+  " }
 
-    " Setup Bundle Support {
-        " The next three lines ensure that the ~/.vim/bundle/ system works
-        filetype off
-        set rtp+=~/.vim/bundle/vundle
-        call vundle#rc()
-    " }
-
-    " Add an UnBundle command {
-    function! UnBundle(arg, ...)
-      let bundle = vundle#config#init_bundle(a:arg, a:000)
-      call filter(g:bundles, 'v:val["name_spec"] != "' . a:arg . '"')
-    endfunction
-
-    com! -nargs=+         UnBundle
-    \ call UnBundle(<args>)
-    " }
+  " Setup Plugin Support {
+    " The next three lines ensure that the ~/.vim/bundle/ system works
+    filetype off
+    set rtp+=~/.vim/bundle/Vundle.vim
+    call vundle#begin()
+  " }
 
 " }
 
-" Bundles {
+" Plugins {
 
-    " Deps {
-        Bundle 'gmarik/vundle'
-        Bundle 'MarcWeber/vim-addon-mw-utils'
-        Bundle 'tomtom/tlib_vim'
-        Bundle 'tmhedberg/matchit'
-        if executable('ag')
-            Bundle 'mileszs/ack.vim'
-            let g:ackprg = 'ag --nogroup --nocolor --column --smart-case'
-        elseif executable('ack-grep')
-            let g:ackprg="ack-grep -H --nocolor --nogroup --column"
-            Bundle 'mileszs/ack.vim'
-        elseif executable('ack')
-            Bundle 'mileszs/ack.vim'
-        endif
-    " }
+  " Deps {
+    Plugin 'gmarik/vundle'
+    Plugin 'MarcWeber/vim-addon-mw-utils'
+    Plugin 'tomtom/tlib_vim'
+    Plugin 'tmhedberg/matchit'
+    if executable('ag')
+      Plugin 'mileszs/ack.vim'
+      let g:ackprg = 'ag --nogroup --nocolor --column --smart-case'
+    elseif executable('ack-grep')
+      let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+      Plugin 'mileszs/ack.vim'
+    elseif executable('ack')
+      Plugin 'mileszs/ack.vim'
+    endif
+  " }
 
-    " General {
-        Bundle 'scrooloose/nerdtree'
-        Bundle 'altercation/vim-colors-solarized'
-        Bundle 'tpope/vim-surround'
-        Bundle 'kien/ctrlp.vim'
-        Bundle 'bling/vim-airline'
-        Bundle 'bling/vim-bufferline'
-        Bundle 'Lokaltog/vim-easymotion'
-        Bundle 'godlygeek/csapprox'
-        Bundle 'nathanaelkane/vim-indent-guides'
-        Bundle 'mhinz/vim-signify'
-        Bundle 'tpope/vim-abolish.git'
-        Bundle 'ervandew/supertab'
-    " }
+  " General {
+    Plugin 'scrooloose/nerdtree'
+    Plugin 'altercation/vim-colors-solarized'
+    Plugin 'tpope/vim-surround'
+    Plugin 'kien/ctrlp.vim'
+    Plugin 'bling/vim-airline'
+    Plugin 'bling/vim-bufferline'
+    Plugin 'Lokaltog/vim-easymotion'
+    Plugin 'godlygeek/csapprox'
+    Plugin 'nathanaelkane/vim-indent-guides'
+    Plugin 'mhinz/vim-signify'
+    Plugin 'tpope/vim-abolish.git'
+    Plugin 'ervandew/supertab'
+  " }
 
-    " General Programming {
-        Bundle 'scrooloose/syntastic'
-        Bundle 'tpope/vim-fugitive'
-        Bundle 'scrooloose/nerdcommenter'
-        Bundle 'godlygeek/tabular'
-        Bundle 'ervandew/supertab'
-        if executable('ctags')
-            Bundle 'majutsushi/tagbar'
-        endif
-    " }
+  " General Programming {
+    Plugin 'scrooloose/syntastic'
+    Plugin 'tpope/vim-fugitive'
+    Plugin 'scrooloose/nerdcommenter'
+    Plugin 'godlygeek/tabular'
+    Plugin 'ervandew/supertab'
+    if executable('ctags')
+      Plugin 'majutsushi/tagbar'
+    endif
+  " }
 
-    " Javascript {
-        Bundle 'elzr/vim-json'
-        Bundle 'groenewege/vim-less'
-        Bundle 'pangloss/vim-javascript'
-        Bundle 'briancollins/vim-jst'
-        Bundle 'kchmck/vim-coffee-script'
-        Bundle "othree/javascript-libraries-syntax.vim"
-    " }
+  " Javascript {
+    Plugin 'elzr/vim-json'
+    Plugin 'groenewege/vim-less'
+    Plugin 'pangloss/vim-javascript'
+    Plugin 'briancollins/vim-jst'
+    Plugin 'kchmck/vim-coffee-script'
+    Plugin "othree/javascript-libraries-syntax.vim"
+  " }
 
-    " HTML {
-        Bundle 'amirh/HTML-AutoCloseTag'
-        Bundle 'hail2u/vim-css3-syntax'
-        Bundle 'gorodinskiy/vim-coloresque'
-        Bundle 'tpope/vim-haml'
-        Bundle 'mattn/emmet-vim'
-    " }
+  " HTML {
+    Plugin 'amirh/HTML-AutoCloseTag'
+    Plugin 'hail2u/vim-css3-syntax'
+    Plugin 'gorodinskiy/vim-coloresque'
+    Plugin 'tpope/vim-haml'
+    Plugin 'mattn/emmet-vim'
+  " }
 
-    " Ruby {
-        Bundle 'vim-ruby/vim-ruby'
-        Bundle 'tpope/vim-rails'
-        Bundle 'ecomba/vim-ruby-refactoring'
-        Bundle 'tpope/vim-endwise'
-        Bundle "tpope/vim-rake"
-        Bundle "tpope/vim-bundler"
-        let g:rubycomplete_buffer_loading = 1
-        let g:rubycomplete_classes_in_global = 1
-        let g:rubycomplete_rails = 1
-    " }
+  " Ruby {
+    Plugin 'vim-ruby/vim-ruby'
+    Plugin 'tpope/vim-rails'
+    Plugin 'ecomba/vim-ruby-refactoring'
+    Plugin 'tpope/vim-endwise'
+    Plugin "tpope/vim-rake"
+    Plugin "tpope/vim-bundler"
+    let g:rubycomplete_buffer_loading = 1
+    let g:rubycomplete_classes_in_global = 1
+    let g:rubycomplete_rails = 1
+  " }
 
-	" Clojure {
-		Bundle 'tpope/vim-fireplace'
-		Bundle 'tpope/vim-classpath'
-		Bundle 'guns/vim-clojure-static'
-		Bundle 'kien/rainbow_parentheses.vim'
-		Bundle 'guns/vim-clojure-highlight'
-	" }
+  " Clojure {
+    Plugin 'tpope/vim-fireplace'
+    Plugin 'tpope/vim-classpath'
+    Plugin 'guns/vim-clojure-static'
+    Plugin 'kien/rainbow_parentheses.vim'
+    Plugin 'guns/vim-clojure-highlight'
+  " }
 
-    " Misc {
-        Bundle 'tpope/vim-markdown'
-        Bundle 'spf13/vim-preview'
-        Bundle 'tpope/vim-cucumber'
-        Bundle 'quentindecock/vim-cucumber-align-pipes'
-        Bundle 'jpo/vim-railscasts-theme'
-        Bundle "daylerees/colour-schemes", { "rtp": "vim-themes/" }
-        Bundle "tpope/vim-dispatch"
-        Bundle "tpope/vim-eunuch"
-    " }
+  " Misc {
+    Plugin 'tpope/vim-markdown'
+    Plugin 'spf13/vim-preview'
+    Plugin 'tpope/vim-cucumber'
+    Plugin 'quentindecock/vim-cucumber-align-pipes'
+    Plugin 'jpo/vim-railscasts-theme'
+    Plugin "daylerees/colour-schemes", { "rtp": "vim-themes/" }
+    Plugin "tpope/vim-dispatch"
+    Plugin "tpope/vim-eunuch"
+  " }
 
 " }
+
+call vundle#end()            " required
+filetype plugin indent on    " required

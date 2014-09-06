@@ -17,7 +17,7 @@
 " Plugins {
 
   " Deps {
-    Plugin 'gmarik/vundle'
+    Plugin 'gmarik/Vundle.vim'
     Plugin 'MarcWeber/vim-addon-mw-utils'
     Plugin 'tomtom/tlib_vim'
     Plugin 'tmhedberg/matchit'
@@ -44,7 +44,6 @@
     Plugin 'nathanaelkane/vim-indent-guides'
     Plugin 'mhinz/vim-signify'
     Plugin 'tpope/vim-abolish.git'
-    Plugin 'ervandew/supertab'
   " }
 
   " General Programming {
@@ -64,7 +63,7 @@
     Plugin 'pangloss/vim-javascript'
     Plugin 'briancollins/vim-jst'
     Plugin 'kchmck/vim-coffee-script'
-    Plugin "othree/javascript-libraries-syntax.vim"
+    Plugin 'othree/javascript-libraries-syntax.vim'
   " }
 
   " HTML {
@@ -80,8 +79,8 @@
     Plugin 'tpope/vim-rails'
     Plugin 'ecomba/vim-ruby-refactoring'
     Plugin 'tpope/vim-endwise'
-    Plugin "tpope/vim-rake"
-    Plugin "tpope/vim-bundler"
+    Plugin 'tpope/vim-rake'
+    Plugin 'tpope/vim-bundler'
     let g:rubycomplete_buffer_loading = 1
     let g:rubycomplete_classes_in_global = 1
     let g:rubycomplete_rails = 1
@@ -101,9 +100,9 @@
     Plugin 'tpope/vim-cucumber'
     Plugin 'quentindecock/vim-cucumber-align-pipes'
     Plugin 'jpo/vim-railscasts-theme'
-    Plugin "daylerees/colour-schemes", { "rtp": "vim-themes/" }
-    Plugin "tpope/vim-dispatch"
-    Plugin "tpope/vim-eunuch"
+    Plugin 'daylerees/colour-schemes', { "rtp": "vim-themes/" }
+    Plugin 'tpope/vim-dispatch'
+    Plugin 'tpope/vim-eunuch'
   " }
 
 " }

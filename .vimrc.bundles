@@ -100,7 +100,7 @@
     Plugin 'tpope/vim-cucumber'
     Plugin 'quentindecock/vim-cucumber-align-pipes'
     Plugin 'jpo/vim-railscasts-theme'
-    Plugin 'daylerees/colour-schemes', { "rtp": "vim-themes/" }
+    Plugin 'daylerees/colour-schemes', { 'rtp': 'vim-themes/' }
     Plugin 'tpope/vim-dispatch'
     Plugin 'tpope/vim-eunuch'
   " }

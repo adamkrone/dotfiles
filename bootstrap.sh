@@ -19,10 +19,11 @@ source ~/.bash_profile
 mv ~/com.googlecode.iterm2.plist ~/Library/Preferences/
 
 getLatestVundle() {
-  repo="~/.vim/bundle/Vundle.vim"
-  url="https://github.com/gmarik/Vundle.vim.git"
-
-  if cd $repo; then git pull; else git clone $url $repo; fi
+  if [ -d ~/.vim/bundle/Vundle.vim ]; then
+    git pull
+  else
+    git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+  fi
 }
 
 getLatestVundle

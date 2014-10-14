@@ -88,6 +88,10 @@
     let g:rubycomplete_rails = 1
   " }
 
+  " Go {
+    Plugin 'fatih/vim-go'
+  " }
+
   " Clojure {
     Plugin 'tpope/vim-fireplace'
     Plugin 'tpope/vim-classpath'

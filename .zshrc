@@ -89,3 +89,6 @@ export EDITOR="vim"
 rvm use default
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+export GOPATH=$HOME/go
+PATH=$PATH:$GOPATH/bin

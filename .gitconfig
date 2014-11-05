@@ -66,6 +66,7 @@
 # URL shorthands
 [url "git@github.com:"]
 	insteadOf = "gh:"
+	insteadOf = "https://github.com"
 	pushInsteadOf = "github:"
 	pushInsteadOf = "git://github.com/"
 [url "git://github.com/"]

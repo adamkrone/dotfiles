@@ -86,6 +86,7 @@ export PATH=/usr/local/bin:/usr/local/share/npm/bin:/usr/local/deployd/bin:/usr/
 
 export EDITOR="vim"
 
+source $HOME/.rvm/scripts/rvm
 rvm use default
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

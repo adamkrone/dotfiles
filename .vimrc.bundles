@@ -110,6 +110,7 @@
     Plugin 'daylerees/colour-schemes', { 'rtp': 'vim-themes/' }
     Plugin 'tpope/vim-dispatch'
     Plugin 'tpope/vim-eunuch'
+    Plugin 'ryanss/vim-hackernews'
   " }
 
 " }

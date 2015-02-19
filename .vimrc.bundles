@@ -84,6 +84,7 @@
     Plugin 'tpope/vim-rake'
     Plugin 'tpope/vim-bundler'
     Plugin 'thoughtbot/vim-rspec'
+    Plugin 'kmdsbng/vim-ruby-eval'
     let g:rubycomplete_buffer_loading = 1
     let g:rubycomplete_classes_in_global = 1
     let g:rubycomplete_rails = 1

@@ -66,6 +66,8 @@
     Plugin 'kchmck/vim-coffee-script'
     Plugin 'othree/javascript-libraries-syntax.vim'
     Plugin 'mustache/vim-mustache-handlebars'
+    Plugin 'claco/jasmine.vim'
+    Plugin 'burnettk/vim-angular'
   " }
 
   " HTML {

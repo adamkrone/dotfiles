@@ -30,7 +30,6 @@ brew install php54
 
 # Install everything else
 brew install ack
-#brew install exiv2
 brew install git
 brew install mercurial
 brew install tmux
@@ -52,3 +51,6 @@ brew install jpeg-turbo
 brew install nmap
 brew install netcat
 brew install ctags
+brew install mysql
+brew install postgresql
+brew install redis

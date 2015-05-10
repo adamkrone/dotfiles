@@ -104,6 +104,10 @@
     Plugin 'guns/vim-clojure-highlight'
   " }
 
+  " Rust {
+    Plugin 'rust-lang/rust.vim'
+  " }
+
   " Misc {
     Plugin 'tpope/vim-markdown'
     Plugin 'spf13/vim-preview'

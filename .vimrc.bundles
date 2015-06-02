@@ -119,6 +119,7 @@
     Plugin 'tpope/vim-eunuch'
     Plugin 'ryanss/vim-hackernews'
     Plugin 'vim-scripts/SyntaxRange'
+    Plugin 'terryma/vim-expand-region'
   " }
 
 " }

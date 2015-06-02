@@ -428,6 +428,11 @@ map zh zH
     map <Leader>a :call RunAllSpecs()<CR>
   " }
 
+  " Vim Expand Region {
+    vmap v <Plug>(expand_region_expand)
+    vmap <C-v> <Plug>(expand_region_shrink)
+  " }
+
 " }
 
 " GUI Settings {

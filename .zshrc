@@ -93,3 +93,6 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 export GOPATH=$HOME/go
 PATH=$PATH:$GOPATH/bin
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh

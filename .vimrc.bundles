@@ -68,6 +68,7 @@
     Plugin 'mustache/vim-mustache-handlebars'
     Plugin 'claco/jasmine.vim'
     Plugin 'burnettk/vim-angular'
+    Plugin 'leafgarland/typescript-vim'
   " }
 
   " HTML {

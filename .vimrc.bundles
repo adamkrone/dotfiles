@@ -110,6 +110,11 @@
     Plugin 'rust-lang/rust.vim'
   " }
 
+  " Elixir {
+    Plugin 'elixir-lang/vim-elixir'
+    Plugin 'avdgaag/vim-phoenix'
+  " }
+
   " Misc {
     Plugin 'tpope/vim-markdown'
     Plugin 'spf13/vim-preview'

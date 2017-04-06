@@ -52,6 +52,13 @@
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
 
+[diff]
+  tool = icdiff
+[difftool]
+  prompt = false
+[difftool "icdiff"]
+  cmd = /usr/local/bin/icdiff --line-numbers $LOCAL $REMOTE
+
 # Use `origin` as the default remote on the `master` branch in all cases
 [branch "master"]
 	remote = origin

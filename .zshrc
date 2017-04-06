@@ -8,6 +8,8 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="agnoster"
 DEFAULT_USER="adamkrone"
 
+. `brew --prefix`/etc/profile.d/z.sh
+
 # Files
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
@@ -100,3 +102,5 @@ source $(brew --prefix nvm)/nvm.sh
 export DOCKER_HOST=tcp://192.168.99.100:2376
 export DOCKER_CERT_PATH=$HOME/.docker/machine/machines/default
 export DOCKER_TLS_VERIFY=1
+
+export GPG_TTY=`tty`

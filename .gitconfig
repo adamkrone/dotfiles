@@ -38,6 +38,7 @@
   # Use custom `.gitignore` and `.gitattributes`
   excludesfile = ~/.gitignore
   attributesfile = ~/.gitattributes
+  pager = diff-so-fancy | less --tabs=4 -RFX
 
 [color]
   # Use colors in Git commands that are capable of colored output when outputting to the terminal
@@ -61,6 +62,8 @@
 
 [diff]
   tool = icdiff
+  compactionHeuristic = on
+  indentHeuristic = on
 [difftool]
   prompt = false
 [difftool "icdiff"]

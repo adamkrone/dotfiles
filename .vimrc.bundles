@@ -57,6 +57,7 @@
     if executable('ctags')
       Plugin 'majutsushi/tagbar'
     endif
+    Plugin 'junegunn/fzf'
   " }
 
   " Javascript {

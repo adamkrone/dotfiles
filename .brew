@@ -55,3 +55,6 @@ brew install mysql
 brew install postgresql
 brew install redis
 brew install diff-so-fancy
+brew install fzf
+brew install rg
+brew install ag

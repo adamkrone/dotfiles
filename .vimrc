@@ -433,6 +433,13 @@ map zh zH
     vmap <C-v> <Plug>(expand_region_shrink)
   " }
 
+  " asm_ca65 {
+  filetype plugin indent on
+  augroup filetypedetect
+    au BufNewFile,BufRead *.s,*.inc set ft=asm_ca65
+  augroup END
+  " }
+
 " }
 
 " GUI Settings {

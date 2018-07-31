@@ -117,6 +117,10 @@
     Plugin 'avdgaag/vim-phoenix'
   " }
 
+  " ASM {
+    Plugin 'maxbane/vim-asm_ca65'
+  " }
+
   " Misc {
     Plugin 'tpope/vim-markdown'
     Plugin 'spf13/vim-preview'

@@ -46,6 +46,7 @@
     Plugin 'mhinz/vim-signify'
     Plugin 'tpope/vim-abolish.git'
     Plugin 'SuperTab'
+    Plugin 'AndrewRadev/splitjoin.vim'
   " }
 
   " General Programming {

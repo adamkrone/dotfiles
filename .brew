@@ -58,3 +58,7 @@ brew install diff-so-fancy
 brew install fzf
 brew install rg
 brew install ag
+brew install elasticsearch
+brew install graphviz
+brew install gopass
+brew install go

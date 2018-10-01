@@ -24,6 +24,7 @@ alias ranger="~/ranger/ranger.py"
 # Useful Ruby aliases
 alias be="bundle exec"
 alias bi="bundle install"
+alias bu="bundle update"
 
 # Make dir and cd into it
 mkcd() {

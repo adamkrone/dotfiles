@@ -60,6 +60,7 @@
       Plugin 'majutsushi/tagbar'
     endif
     Plugin 'junegunn/fzf'
+    Plugin 'vim-vdebug/vdebug'
   " }
 
   " Javascript {

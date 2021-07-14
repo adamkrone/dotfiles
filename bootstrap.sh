@@ -18,13 +18,4 @@ source ~/.bash_profile
 
 mv ~/com.googlecode.iterm2.plist ~/Library/Preferences/
 
-getLatestVundle() {
-  if [ -d ~/.vim/bundle/Vundle.vim ]; then
-    git pull
-  else
-    git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-  fi
-}
-
-getLatestVundle
-vim +BundleInstall! +BundleClean +q
+nvim +PlugInstall
